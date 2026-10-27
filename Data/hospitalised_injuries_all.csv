@@ -1,0 +1,459 @@
+"dataset","year","category","subcategory","Hospitalisations"
+"national_roaduser",2011,"Bus occupant",,214
+"national_roaduser",2011,"Car driver",,10948
+"national_roaduser",2011,"Car passenger",,4853
+"national_roaduser",2011,"Car unknown position",,889
+"national_roaduser",2011,"Heavy transport driver",,455
+"national_roaduser",2011,"Heavy transport passenger",,52
+"national_roaduser",2011,"Heavy transport unknown position",,55
+"national_roaduser",2011,"Motorcyclist",,7565
+"national_roaduser",2011,"Other or unknown",,610
+"national_roaduser",2011,"Pedal cyclist",,5391
+"national_roaduser",2011,"Pedestrian",,2754
+"national_roaduser",2011,"Pick-up truck or van occupant",,247
+"national_roaduser",2012,"Bus occupant",,217
+"national_roaduser",2012,"Car driver",,10806
+"national_roaduser",2012,"Car passenger",,4738
+"national_roaduser",2012,"Car unknown position",,895
+"national_roaduser",2012,"Heavy transport driver",,416
+"national_roaduser",2012,"Heavy transport passenger",,47
+"national_roaduser",2012,"Heavy transport unknown position",,48
+"national_roaduser",2012,"Motorcyclist",,7728
+"national_roaduser",2012,"Other or unknown",,563
+"national_roaduser",2012,"Pedal cyclist",,5621
+"national_roaduser",2012,"Pedestrian",,2672
+"national_roaduser",2012,"Pick-up truck or van occupant",,273
+"national_roaduser",2013,"Bus occupant",,226
+"national_roaduser",2013,"Car driver",,10942
+"national_roaduser",2013,"Car passenger",,4828
+"national_roaduser",2013,"Car unknown position",,818
+"national_roaduser",2013,"Heavy transport driver",,415
+"national_roaduser",2013,"Heavy transport passenger",,40
+"national_roaduser",2013,"Heavy transport unknown position",,29
+"national_roaduser",2013,"Motorcyclist",,8018
+"national_roaduser",2013,"Other or unknown",,536
+"national_roaduser",2013,"Pedal cyclist",,6262
+"national_roaduser",2013,"Pedestrian",,2657
+"national_roaduser",2013,"Pick-up truck or van occupant",,230
+"national_roaduser",2014,"Bus occupant",,289
+"national_roaduser",2014,"Car driver",,11122
+"national_roaduser",2014,"Car passenger",,4625
+"national_roaduser",2014,"Car unknown position",,728
+"national_roaduser",2014,"Heavy transport driver",,377
+"national_roaduser",2014,"Heavy transport passenger",,55
+"national_roaduser",2014,"Heavy transport unknown position",,48
+"national_roaduser",2014,"Motorcyclist",,8334
+"national_roaduser",2014,"Other or unknown",,508
+"national_roaduser",2014,"Pedal cyclist",,6636
+"national_roaduser",2014,"Pedestrian",,2554
+"national_roaduser",2014,"Pick-up truck or van occupant",,239
+"national_roaduser",2015,"Bus occupant",,246
+"national_roaduser",2015,"Car driver",,12163
+"national_roaduser",2015,"Car passenger",,4958
+"national_roaduser",2015,"Car unknown position",,812
+"national_roaduser",2015,"Heavy transport driver",,444
+"national_roaduser",2015,"Heavy transport passenger",,43
+"national_roaduser",2015,"Heavy transport unknown position",,23
+"national_roaduser",2015,"Motorcyclist",,8298
+"national_roaduser",2015,"Other or unknown",,503
+"national_roaduser",2015,"Pedal cyclist",,6716
+"national_roaduser",2015,"Pedestrian",,2627
+"national_roaduser",2015,"Pick-up truck or van occupant",,249
+"national_roaduser",2016,"Bus occupant",,283
+"national_roaduser",2016,"Car driver",,13194
+"national_roaduser",2016,"Car passenger",,5103
+"national_roaduser",2016,"Car unknown position",,808
+"national_roaduser",2016,"Heavy transport driver",,403
+"national_roaduser",2016,"Heavy transport passenger",,42
+"national_roaduser",2016,"Heavy transport unknown position",,39
+"national_roaduser",2016,"Motorcyclist",,8526
+"national_roaduser",2016,"Other or unknown",,620
+"national_roaduser",2016,"Pedal cyclist",,6904
+"national_roaduser",2016,"Pedestrian",,2743
+"national_roaduser",2016,"Pick-up truck or van occupant",,298
+"national_roaduser",2017,"Bus occupant",,265
+"national_roaduser",2017,"Car driver",,13267
+"national_roaduser",2017,"Car passenger",,5102
+"national_roaduser",2017,"Car unknown position",,777
+"national_roaduser",2017,"Heavy transport driver",,447
+"national_roaduser",2017,"Heavy transport passenger",,49
+"national_roaduser",2017,"Heavy transport unknown position",,32
+"national_roaduser",2017,"Motorcyclist",,8739
+"national_roaduser",2017,"Other or unknown",,600
+"national_roaduser",2017,"Pedal cyclist",,7076
+"national_roaduser",2017,"Pedestrian",,2714
+"national_roaduser",2017,"Pick-up truck or van occupant",,271
+"national_roaduser",2018,"Bus occupant",,247
+"national_roaduser",2018,"Car driver",,13595
+"national_roaduser",2018,"Car passenger",,5206
+"national_roaduser",2018,"Car unknown position",,864
+"national_roaduser",2018,"Heavy transport driver",,437
+"national_roaduser",2018,"Heavy transport passenger",,69
+"national_roaduser",2018,"Heavy transport unknown position",,47
+"national_roaduser",2018,"Motorcyclist",,8623
+"national_roaduser",2018,"Other or unknown",,603
+"national_roaduser",2018,"Pedal cyclist",,6959
+"national_roaduser",2018,"Pedestrian",,2661
+"national_roaduser",2018,"Pick-up truck or van occupant",,279
+"national_roaduser",2019,"Bus occupant",,255
+"national_roaduser",2019,"Car driver",,13482
+"national_roaduser",2019,"Car passenger",,4989
+"national_roaduser",2019,"Car unknown position",,797
+"national_roaduser",2019,"Heavy transport driver",,425
+"national_roaduser",2019,"Heavy transport passenger",,52
+"national_roaduser",2019,"Heavy transport unknown position",,47
+"national_roaduser",2019,"Motorcyclist",,8924
+"national_roaduser",2019,"Other or unknown",,620
+"national_roaduser",2019,"Pedal cyclist",,7302
+"national_roaduser",2019,"Pedestrian",,2713
+"national_roaduser",2019,"Pick-up truck or van occupant",,260
+"national_roaduser",2020,"Bus occupant",,173
+"national_roaduser",2020,"Car driver",,12217
+"national_roaduser",2020,"Car passenger",,4344
+"national_roaduser",2020,"Car unknown position",,731
+"national_roaduser",2020,"Heavy transport driver",,412
+"national_roaduser",2020,"Heavy transport passenger",,48
+"national_roaduser",2020,"Heavy transport unknown position",,40
+"national_roaduser",2020,"Motorcyclist",,8684
+"national_roaduser",2020,"Other or unknown",,582
+"national_roaduser",2020,"Pedal cyclist",,8332
+"national_roaduser",2020,"Pedestrian",,2103
+"national_roaduser",2020,"Pick-up truck or van occupant",,300
+"national_roaduser",2021,"Bus occupant",,169
+"national_roaduser",2021,"Car driver",,13327
+"national_roaduser",2021,"Car passenger",,4495
+"national_roaduser",2021,"Car unknown position",,717
+"national_roaduser",2021,"Heavy transport driver",,383
+"national_roaduser",2021,"Heavy transport passenger",,56
+"national_roaduser",2021,"Heavy transport unknown position",,36
+"national_roaduser",2021,"Motorcyclist",,8883
+"national_roaduser",2021,"Other or unknown",,601
+"national_roaduser",2021,"Pedal cyclist",,8163
+"national_roaduser",2021,"Pedestrian",,2334
+"national_roaduser",2021,"Pick-up truck or van occupant",,341
+"national_age",2011,"0-7",,719
+"national_age",2011,"8-16",,2520
+"national_age",2011,"17-25",,8094
+"national_age",2011,"26-39",,8166
+"national_age",2011,"40-64",,10660
+"national_age",2011,"65-74",,1968
+"national_age",2011,"75+",,1906
+"national_age",2012,"0-7",,750
+"national_age",2012,"8-16",,2327
+"national_age",2012,"17-25",,8035
+"national_age",2012,"26-39",,8251
+"national_age",2012,"40-64",,10662
+"national_age",2012,"65-74",,1941
+"national_age",2012,"75+",,2058
+"national_age",2013,"0-7",,732
+"national_age",2013,"8-16",,2383
+"national_age",2013,"17-25",,7852
+"national_age",2013,"26-39",,8472
+"national_age",2013,"40-64",,11345
+"national_age",2013,"65-74",,2157
+"national_age",2013,"75+",,2060
+"national_age",2014,"0-7",,729
+"national_age",2014,"8-16",,2231
+"national_age",2014,"17-25",,7728
+"national_age",2014,"26-39",,8668
+"national_age",2014,"40-64",,11666
+"national_age",2014,"65-74",,2345
+"national_age",2014,"75+",,2147
+"national_age",2014,"Missing",,1
+"national_age",2015,"0-7",,750
+"national_age",2015,"8-16",,2439
+"national_age",2015,"17-25",,7882
+"national_age",2015,"26-39",,8977
+"national_age",2015,"40-64",,12199
+"national_age",2015,"65-74",,2465
+"national_age",2015,"75+",,2370
+"national_age",2016,"0-7",,736
+"national_age",2016,"8-16",,2476
+"national_age",2016,"17-25",,8474
+"national_age",2016,"26-39",,9451
+"national_age",2016,"40-64",,12749
+"national_age",2016,"65-74",,2677
+"national_age",2016,"75+",,2400
+"national_age",2017,"0-7",,740
+"national_age",2017,"8-16",,2498
+"national_age",2017,"17-25",,8468
+"national_age",2017,"26-39",,9508
+"national_age",2017,"40-64",,12937
+"national_age",2017,"65-74",,2777
+"national_age",2017,"75+",,2411
+"national_age",2018,"0-7",,724
+"national_age",2018,"8-16",,2422
+"national_age",2018,"17-25",,8309
+"national_age",2018,"26-39",,9736
+"national_age",2018,"40-64",,12973
+"national_age",2018,"65-74",,2876
+"national_age",2018,"75+",,2550
+"national_age",2019,"0-7",,704
+"national_age",2019,"8-16",,2495
+"national_age",2019,"17-25",,8102
+"national_age",2019,"26-39",,9641
+"national_age",2019,"40-64",,13170
+"national_age",2019,"65-74",,3068
+"national_age",2019,"75+",,2686
+"national_age",2020,"0-7",,714
+"national_age",2020,"8-16",,2799
+"national_age",2020,"17-25",,7971
+"national_age",2020,"26-39",,9202
+"national_age",2020,"40-64",,12342
+"national_age",2020,"65-74",,2779
+"national_age",2020,"75+",,2159
+"national_age",2021,"0-7",,707
+"national_age",2021,"8-16",,2863
+"national_age",2021,"17-25",,8010
+"national_age",2021,"26-39",,9423
+"national_age",2021,"40-64",,13026
+"national_age",2021,"65-74",,3018
+"national_age",2021,"75+",,2458
+"national_sex",2011,"Female",,11712
+"national_sex",2011,"Male",,22321
+"national_sex",2012,"Female",,11593
+"national_sex",2012,"Male",,22431
+"national_sex",2013,"Female",,12042
+"national_sex",2013,"Male",,22957
+"national_sex",2013,"intersex or indeterminate or missing",,2
+"national_sex",2014,"Female",,12294
+"national_sex",2014,"Male",,23221
+"national_sex",2015,"Female",,13161
+"national_sex",2015,"Male",,23920
+"national_sex",2015,"intersex or indeterminate or missing",,1
+"national_sex",2016,"Female",,13952
+"national_sex",2016,"Male",,25011
+"national_sex",2017,"Female",,14083
+"national_sex",2017,"Male",,25256
+"national_sex",2018,"Female",,14273
+"national_sex",2018,"Male",,25315
+"national_sex",2018,"intersex or indeterminate or missing",,2
+"national_sex",2019,"Female",,14499
+"national_sex",2019,"Male",,25365
+"national_sex",2019,"intersex or indeterminate or missing",,2
+"national_sex",2020,"Female",,12781
+"national_sex",2020,"Male",,25178
+"national_sex",2020,"intersex or indeterminate or missing",,7
+"national_sex",2021,"Female",,13716
+"national_sex",2021,"Male",,25788
+"national_sex",2021,"intersex or indeterminate or missing",,1
+"national_remoteness",2011,"Major Cities",,21870
+"national_remoteness",2011,"Missing",,546
+"national_remoteness",2011,"Regional",,10461
+"national_remoteness",2011,"Remote",,1156
+"national_remoteness",2012,"Major Cities",,21812
+"national_remoteness",2012,"Missing",,628
+"national_remoteness",2012,"Regional",,10321
+"national_remoteness",2012,"Remote",,1263
+"national_remoteness",2013,"Major Cities",,23134
+"national_remoteness",2013,"Missing",,663
+"national_remoteness",2013,"Regional",,9984
+"national_remoteness",2013,"Remote",,1220
+"national_remoteness",2014,"Major Cities",,23481
+"national_remoteness",2014,"Missing",,746
+"national_remoteness",2014,"Regional",,10135
+"national_remoteness",2014,"Remote",,1153
+"national_remoteness",2015,"Major Cities",,24557
+"national_remoteness",2015,"Missing",,845
+"national_remoteness",2015,"Regional",,10502
+"national_remoteness",2015,"Remote",,1178
+"national_remoteness",2016,"Major Cities",,26344
+"national_remoteness",2016,"Missing",,813
+"national_remoteness",2016,"Regional",,10662
+"national_remoteness",2016,"Remote",,1144
+"national_remoteness",2017,"Major Cities",,26279
+"national_remoteness",2017,"Missing",,968
+"national_remoteness",2017,"Regional",,11038
+"national_remoteness",2017,"Remote",,1054
+"national_remoteness",2018,"Major Cities",,26168
+"national_remoteness",2018,"Missing",,1013
+"national_remoteness",2018,"Regional",,11209
+"national_remoteness",2018,"Remote",,1200
+"national_remoteness",2019,"Major Cities",,26555
+"national_remoteness",2019,"Missing",,1167
+"national_remoteness",2019,"Regional",,11045
+"national_remoteness",2019,"Remote",,1099
+"national_remoteness",2020,"Major Cities",,24925
+"national_remoteness",2020,"Missing",,815
+"national_remoteness",2020,"Regional",,11054
+"national_remoteness",2020,"Remote",,1172
+"national_remoteness",2021,"Major Cities",,26355
+"national_remoteness",2021,"Missing",,629
+"national_remoteness",2021,"Regional",,11407
+"national_remoteness",2021,"Remote",,1114
+"state",2011,"ACT",,537
+"state",2011,"NSW",,10618
+"state",2011,"NT",,456
+"state",2011,"Qld",,6322
+"state",2011,"SA",,2359
+"state",2011,"Tas",,493
+"state",2011,"Vic",,9326
+"state",2011,"WA",,3442
+"state",2012,"ACT",,601
+"state",2012,"NSW",,11121
+"state",2012,"NT",,496
+"state",2012,"Qld",,6813
+"state",2012,"SA",,2311
+"state",2012,"Tas",,536
+"state",2012,"Vic",,8098
+"state",2012,"WA",,3493
+"state",2013,"ACT",,573
+"state",2013,"NSW",,11421
+"state",2013,"NT",,561
+"state",2013,"Qld",,7821
+"state",2013,"SA",,2221
+"state",2013,"Tas",,570
+"state",2013,"Vic",,7784
+"state",2013,"WA",,3475
+"state",2014,"ACT",,542
+"state",2014,"NSW",,11313
+"state",2014,"NT",,575
+"state",2014,"Qld",,7725
+"state",2014,"SA",,2381
+"state",2014,"Tas",,646
+"state",2014,"Vic",,8523
+"state",2014,"WA",,3154
+"state",2015,"ACT",,700
+"state",2015,"NSW",,11084
+"state",2015,"NT",,691
+"state",2015,"Qld",,8306
+"state",2015,"SA",,2467
+"state",2015,"Tas",,677
+"state",2015,"Vic",,9198
+"state",2015,"WA",,3183
+"state",2016,"ACT",,654
+"state",2016,"NSW",,11474
+"state",2016,"NT",,709
+"state",2016,"Qld",,8702
+"state",2016,"SA",,2654
+"state",2016,"Tas",,657
+"state",2016,"Vic",,10360
+"state",2016,"WA",,3031
+"state",2017,"ACT",,632
+"state",2017,"NSW",,11016
+"state",2017,"NT",,703
+"state",2017,"Qld",,9134
+"state",2017,"SA",,2394
+"state",2017,"Tas",,659
+"state",2017,"Vic",,10794
+"state",2017,"WA",,3195
+"state",2018,"ACT",,712
+"state",2018,"NSW",,9794
+"state",2018,"NT",,832
+"state",2018,"Qld",,9381
+"state",2018,"SA",,2489
+"state",2018,"Tas",,781
+"state",2018,"Vic",,11453
+"state",2018,"WA",,3274
+"state",2019,"ACT",,665
+"state",2019,"NSW",,9942
+"state",2019,"NT",,656
+"state",2019,"Qld",,9515
+"state",2019,"SA",,2457
+"state",2019,"Tas",,708
+"state",2019,"Vic",,11392
+"state",2019,"WA",,3534
+"state",2020,"ACT",,629
+"state",2020,"NSW",,9274
+"state",2020,"NT",,787
+"state",2020,"Qld",,9801
+"state",2020,"SA",,2503
+"state",2020,"Tas",,778
+"state",2020,"Vic",,9884
+"state",2020,"WA",,3636
+"state",2021,"ACT",,740
+"state",2021,"NSW",,9003
+"state",2021,"NT",,710
+"state",2021,"Qld",,10447
+"state",2021,"SA",,2632
+"state",2021,"Tas",,805
+"state",2021,"Vic",,11130
+"state",2021,"WA",,3568
+"firstnations",2011,"First Nations peoples",,1167
+"firstnations",2011,"Non-Indigenous Australians",,31997
+"firstnations",2012,"First Nations peoples",,1404
+"firstnations",2012,"Non-Indigenous Australians",,31790
+"firstnations",2013,"First Nations peoples",,1414
+"firstnations",2013,"Non-Indigenous Australians",,32839
+"firstnations",2014,"First Nations peoples",,1456
+"firstnations",2014,"Non-Indigenous Australians",,33361
+"firstnations",2015,"First Nations peoples",,1600
+"firstnations",2015,"Non-Indigenous Australians",,34773
+"firstnations",2016,"First Nations peoples",,1669
+"firstnations",2016,"Non-Indigenous Australians",,36684
+"firstnations",2017,"First Nations peoples",,1733
+"firstnations",2017,"Non-Indigenous Australians",,37030
+"firstnations",2018,"First Nations peoples",,1930
+"firstnations",2018,"Non-Indigenous Australians",,37198
+"firstnations",2019,"First Nations peoples",,1856
+"firstnations",2019,"Non-Indigenous Australians",,37482
+"firstnations",2020,"First Nations peoples",,2290
+"firstnations",2020,"Non-Indigenous Australians",,35186
+"firstnations",2021,"First Nations peoples",,2220
+"firstnations",2021,"Non-Indigenous Australians",,36755
+"firstnations_remoteness",2011,"Major Cities","First Nations people",368
+"firstnations_remoteness",2011,"Regional","First Nations people",455
+"firstnations_remoteness",2011,"Remote","First Nations people",330
+"firstnations_remoteness",2011,"Major Cities","Non-Indigenous",20985
+"firstnations_remoteness",2011,"Regional","Non-Indigenous",9717
+"firstnations_remoteness",2011,"Remote","Non-Indigenous",789
+"firstnations_remoteness",2012,"Major Cities","First Nations people",429
+"firstnations_remoteness",2012,"Regional","First Nations people",545
+"firstnations_remoteness",2012,"Remote","First Nations people",426
+"firstnations_remoteness",2012,"Major Cities","Non-Indigenous",20858
+"firstnations_remoteness",2012,"Regional","Non-Indigenous",9536
+"firstnations_remoteness",2012,"Remote","Non-Indigenous",802
+"firstnations_remoteness",2013,"Major Cities","First Nations people",446
+"firstnations_remoteness",2013,"Regional","First Nations people",540
+"firstnations_remoteness",2013,"Remote","First Nations people",420
+"firstnations_remoteness",2013,"Major Cities","Non-Indigenous",22224
+"firstnations_remoteness",2013,"Regional","Non-Indigenous",9218
+"firstnations_remoteness",2013,"Remote","Non-Indigenous",765
+"firstnations_remoteness",2014,"Major Cities","First Nations people",486
+"firstnations_remoteness",2014,"Regional","First Nations people",565
+"firstnations_remoteness",2014,"Remote","First Nations people",392
+"firstnations_remoteness",2014,"Major Cities","Non-Indigenous",22572
+"firstnations_remoteness",2014,"Regional","Non-Indigenous",9358
+"firstnations_remoteness",2014,"Remote","Non-Indigenous",737
+"firstnations_remoteness",2015,"Major Cities","First Nations people",508
+"firstnations_remoteness",2015,"Regional","First Nations people",613
+"firstnations_remoteness",2015,"Remote","First Nations people",461
+"firstnations_remoteness",2015,"Major Cities","Non-Indigenous",23597
+"firstnations_remoteness",2015,"Regional","Non-Indigenous",9684
+"firstnations_remoteness",2015,"Remote","Non-Indigenous",694
+"firstnations_remoteness",2016,"Major Cities","First Nations people",551
+"firstnations_remoteness",2016,"Regional","First Nations people",648
+"firstnations_remoteness",2016,"Remote","First Nations people",454
+"firstnations_remoteness",2016,"Major Cities","Non-Indigenous",25390
+"firstnations_remoteness",2016,"Regional","Non-Indigenous",9846
+"firstnations_remoteness",2016,"Remote","Non-Indigenous",678
+"firstnations_remoteness",2017,"Major Cities","First Nations people",617
+"firstnations_remoteness",2017,"Regional","First Nations people",704
+"firstnations_remoteness",2017,"Remote","First Nations people",393
+"firstnations_remoteness",2017,"Major Cities","Non-Indigenous",25288
+"firstnations_remoteness",2017,"Regional","Non-Indigenous",10163
+"firstnations_remoteness",2017,"Remote","Non-Indigenous",653
+"firstnations_remoteness",2018,"Major Cities","First Nations people",642
+"firstnations_remoteness",2018,"Regional","First Nations people",797
+"firstnations_remoteness",2018,"Remote","First Nations people",466
+"firstnations_remoteness",2018,"Major Cities","Non-Indigenous",25236
+"firstnations_remoteness",2018,"Regional","Non-Indigenous",10278
+"firstnations_remoteness",2018,"Remote","Non-Indigenous",720
+"firstnations_remoteness",2019,"Major Cities","First Nations people",708
+"firstnations_remoteness",2019,"Regional","First Nations people",669
+"firstnations_remoteness",2019,"Remote","First Nations people",447
+"firstnations_remoteness",2019,"Major Cities","Non-Indigenous",25502
+"firstnations_remoteness",2019,"Regional","Non-Indigenous",10232
+"firstnations_remoteness",2019,"Remote","Non-Indigenous",638
+"firstnations_remoteness",2020,"Major Cities","First Nations people",810
+"firstnations_remoteness",2020,"Regional","First Nations people",946
+"firstnations_remoteness",2020,"Remote","First Nations people",504
+"firstnations_remoteness",2020,"Major Cities","Non-Indigenous",23823
+"firstnations_remoteness",2020,"Regional","Non-Indigenous",9936
+"firstnations_remoteness",2020,"Remote","Non-Indigenous",660
+"firstnations_remoteness",2021,"Major Cities","First Nations people",795
+"firstnations_remoteness",2021,"Regional","First Nations people",885
+"firstnations_remoteness",2021,"Remote","First Nations people",503
+"firstnations_remoteness",2021,"Major Cities","Non-Indigenous",25254
+"firstnations_remoteness",2021,"Regional","Non-Indigenous",10332
+"firstnations_remoteness",2021,"Remote","Non-Indigenous",600

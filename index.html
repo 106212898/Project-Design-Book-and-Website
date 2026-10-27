@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Injury Hospitalisation Dashboard</title>
+
+    <link rel="stylesheet" href="CSS/dashboard.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <header class="dashboard-header">
+        <p class="eyebrow">AUSTRALIA · 2011–2021</p>
+        <h1>Road Injury Hospitalisations</h1>
+        <p class="subtitle">
+            Exploring hospitalisations by road-user type, age, sex and state.
+        </p>
+    </header>
+
+    <main class="dashboard">
+        <section class="chart-card chart-wide">
+            <div class="chart-heading">
+                <h2>Hospitalisations Over Time</h2>
+                <p>Yearly figures by road-user category</p>
+            </div>
+            <div id="line-chart" class="chart"></div>
+        </section>
+
+        <section class="chart-card">
+            <div class="chart-heading">
+                <h2>Road-User Categories</h2>
+                <p>Hospitalisations in 2021</p>
+            </div>
+            <div id="bar-chart" class="chart"></div>
+        </section>
+
+        <section class="chart-card">
+            <div class="chart-heading">
+                <h2>Hospitalisations by Sex</h2>
+                <p>Distribution in 2021</p>
+            </div>
+            <div id="donut-chart" class="chart"></div>
+        </section>
+
+        <section class="chart-card">
+            <div class="chart-heading">
+                <h2>Hospitalisations by Age</h2>
+                <p>Age-group comparison in 2021</p>
+            </div>
+            <div id="age-chart" class="chart"></div>
+        </section>
+
+        <section class="chart-card chart-wide">
+            <div class="chart-heading">
+                <h2>Hospitalisations by State</h2>
+                <p>Yearly trends across states and territories</p>
+            </div>
+            <div id="state-chart" class="chart"></div>
+        </section>
+
+        <footer class="dashboard-footer">
+            Source: hospitalised_injuries_all.csv
+        </footer>
+    </main>
+
+    <script src="js/line-chart.js"></script>
+    <script src="js/bar-chart.js"></script>
+    <script src="js/donut-chart.js"></script>
+    <script src="js/age-chart.js"></script>
+    <script src="js/state-chart.js"></script>
+</body>
+</html>
