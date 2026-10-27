@@ -1,15 +1,11 @@
-
-d3.csv("data/hospitalised_injuries_all.csv", d => ({
-    dataset: d.dataset,
-    year: +d.year,
-    category: d.category,
-    value: +d.Hospitalisations
-})).then(data => {
+Dashboard.register("bar", (data, selectedYear) => {
     const rows = data.filter(d =>
-        d.dataset === "national_roaduser" && d.year === 2021
+        d.dataset === "national_roaduser" && d.year === selectedYear
     );
 
     const container = d3.select("#bar-chart");
+
+    container.selectAll("*").remove();
 
     if (!rows.length) {
         container.text("No data available.");
@@ -23,7 +19,9 @@ d3.csv("data/hospitalised_injuries_all.csv", d => ({
     const svg = container.append("svg")
         .attr("viewBox", `0 0 ${width} ${height}`);
 
-    rows.sort((a, b) => d3.descending(a.value, b.value));
+    rows.sort(Dashboard.sort === "name"
+        ? (a, b) => d3.ascending(a.category, b.category)
+        : (a, b) => d3.descending(a.value, b.value));
 
     const x = d3.scaleLinear()
         .domain([0, d3.max(rows, d => d.value) * 1.15])
@@ -80,7 +78,5 @@ d3.csv("data/hospitalised_injuries_all.csv", d => ({
         .attr("y", height - 7)
         .attr("text-anchor", "middle")
         .text("Hospitalisations");
-}).catch(error => {
-    console.error("Error loading bar chart data:", error);
-    d3.select("#bar-chart").text("Unable to load chart data.");
+    Dashboard.interactions("bar", container);
 });

@@ -20,6 +20,13 @@
     </header>
 
     <main class="dashboard">
+        <section class="chart-card chart-wide dashboard-controls" aria-label="Chart controls">
+            <label for="year-select">Comparison year <select id="year-select" disabled></select></label>
+            <label for="sort-select">Road-user bars <select id="sort-select"><option value="value">Highest first</option><option value="name">Alphabetical</option></select></label>
+            <button id="reset-controls" type="button">Reset charts</button>
+            <p id="dashboard-status" role="status">Loading chart data…</p>
+            <p class="interaction-help">Choose a year for the three comparison charts. Hover, tap, or focus chart marks for values. Use trend legends to hide/show categories and state legends to highlight a state. Trend charts show all years.</p>
+        </section>
         <section class="chart-card chart-wide">
             <div class="chart-heading">
                 <h2>Hospitalisations Over Time</h2>
@@ -31,7 +38,7 @@
         <section class="chart-card">
             <div class="chart-heading">
                 <h2>Road-User Categories</h2>
-                <p>Hospitalisations in 2021</p>
+                <p>Hospitalisations in <span class="selected-year">2021</span></p>
             </div>
             <div id="bar-chart" class="chart"></div>
         </section>
@@ -39,7 +46,7 @@
         <section class="chart-card">
             <div class="chart-heading">
                 <h2>Hospitalisations by Sex</h2>
-                <p>Distribution in 2021</p>
+                <p>Distribution in <span class="selected-year">2021</span></p>
             </div>
             <div id="donut-chart" class="chart"></div>
         </section>
@@ -47,7 +54,7 @@
         <section class="chart-card">
             <div class="chart-heading">
                 <h2>Hospitalisations by Age</h2>
-                <p>Age-group comparison in 2021</p>
+                <p>Age-group comparison in <span class="selected-year">2021</span></p>
             </div>
             <div id="age-chart" class="chart"></div>
         </section>
@@ -65,6 +72,7 @@
         </footer>
     </main>
 
+    <script src="js/dashboard.js"></script>
     <script src="js/line-chart.js"></script>
     <script src="js/bar-chart.js"></script>
     <script src="js/donut-chart.js"></script>

@@ -169,3 +169,87 @@ h1 {
         padding: 28px 5%;
     }
 }
+
+/* Dashboard controls */
+.dashboard-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.dashboard-controls label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+select,
+button {
+    font: inherit;
+    padding: 9px 12px;
+    border: 1px solid #94a3b8;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #1e293b;
+}
+
+button {
+    cursor: pointer;
+}
+
+.dashboard-controls p {
+    flex-basis: 100%;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Instructions and state details */
+.interaction-help,
+.state-inspector {
+    font-size: 13px;
+    color: #475569;
+    line-height: 1.7;
+}
+
+.state-inspector {
+    margin-top: 16px;
+}
+
+/* Tooltip showing chart values */
+.chart-tooltip {
+    position: fixed;
+    z-index: 20;
+    max-width: min(320px, calc(100vw - 16px));
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #0f172a;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.5;
+    pointer-events: none;
+    box-shadow: 0 4px 16px #0003;
+}
+
+/* Interactive chart marks and legends */
+.interactive-mark,
+.interactive-legend {
+    cursor: pointer;
+}
+
+.interactive-mark:hover,
+.interactive-mark:focus {
+    stroke: #0f172a;
+    stroke-width: 2.5;
+}
+
+/* Visible outline for keyboard navigation */
+:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
+
+/* Donut chart percentage labels */
+.chart .slice-label {
+    fill: #ffffff;
+    pointer-events: none;
+}

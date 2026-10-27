@@ -1,12 +1,8 @@
-
-d3.csv("data/hospitalised_injuries_all.csv", d => ({
-    dataset: d.dataset,
-    year: +d.year,
-    category: d.category,
-    value: +d.Hospitalisations
-})).then(data => {
+Dashboard.register("line", (data, selectedYear) => {
     const rows = data.filter(d => d.dataset === "national_roaduser");
     const container = d3.select("#line-chart");
+
+    container.selectAll("*").remove();
 
     if (!rows.length) {
         container.text("No data available.");
@@ -14,7 +10,7 @@ d3.csv("data/hospitalised_injuries_all.csv", d => ({
     }
 
     const width = 960;
-    const height = 440;
+    const height = 560;
     const margin = { top: 20, right: 235, bottom: 55, left: 65 };
 
     const svg = container.append("svg")
@@ -27,6 +23,7 @@ d3.csv("data/hospitalised_injuries_all.csv", d => ({
         category,
         values: years.map(year => ({
             year,
+            category,
             value: d3.sum(
                 rows.filter(d => d.category === category && d.year === year),
                 d => d.value
@@ -129,7 +126,5 @@ d3.csv("data/hospitalised_injuries_all.csv", d => ({
         .attr("y", 17)
         .attr("text-anchor", "middle")
         .text("Hospitalisations");
-}).catch(error => {
-    console.error("Error loading line chart data:", error);
-    d3.select("#line-chart").text("Unable to load chart data.");
+    Dashboard.interactions("line", container);
 });

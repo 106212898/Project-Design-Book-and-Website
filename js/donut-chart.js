@@ -1,15 +1,11 @@
-
-d3.csv("data/hospitalised_injuries_all.csv", d => ({
-    dataset: d.dataset,
-    year: +d.year,
-    category: d.category,
-    value: +d.Hospitalisations
-})).then(data => {
+Dashboard.register("donut", (data, selectedYear) => {
     const rows = data.filter(d =>
-        d.dataset === "national_sex" && d.year === 2021
+        d.dataset === "national_sex" && d.year === selectedYear
     );
 
     const container = d3.select("#donut-chart");
+
+    container.selectAll("*").remove();
 
     if (!rows.length) {
         container.text("No data available.");
@@ -96,8 +92,6 @@ d3.csv("data/hospitalised_injuries_all.csv", d => ({
         .attr("fill", "#ffffff")
         .attr("font-size", 11)
         .attr("font-weight", "bold")
-        .text(d => `${(d.data.value / total * 100).toFixed(1)}%`);
-}).catch(error => {
-    console.error("Error loading donut chart data:", error);
-    d3.select("#donut-chart").text("Unable to load chart data.");
+        .text(d => d.data.value / total >= 0.03 ? `${(d.data.value / total * 100).toFixed(1)}%` : "");
+    Dashboard.interactions("donut", container);
 });

@@ -1,12 +1,8 @@
-
-d3.csv("data/hospitalised_injuries_all.csv", d => ({
-    dataset: d.dataset,
-    year: +d.year,
-    category: d.category,
-    value: +d.Hospitalisations
-})).then(data => {
+Dashboard.register("state", (data, selectedYear) => {
     const rows = data.filter(d => d.dataset === "state");
     const container = d3.select("#state-chart");
+
+    container.selectAll("*").remove();
 
     if (!rows.length) {
         container.text("No data available.");
@@ -161,8 +157,5 @@ d3.csv("data/hospitalised_injuries_all.csv", d => ({
             .text(state);
     });
 
-}).catch(error => {
-    console.error("Error loading state chart:", error);
-    d3.select("#state-chart")
-        .text("Unable to load chart data.");
+    Dashboard.interactions("state", container);
 });

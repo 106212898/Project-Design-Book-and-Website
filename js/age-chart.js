@@ -1,17 +1,13 @@
-
-d3.csv("data/hospitalised_injuries_all.csv", d => ({
-    dataset: d.dataset,
-    year: +d.year,
-    category: d.category,
-    value: +d.Hospitalisations
-})).then(data => {
+Dashboard.register("age", (data, selectedYear) => {
     const rows = data.filter(d =>
         d.dataset === "national_age" &&
-        d.year === 2021 &&
+        d.year === selectedYear &&
         d.category !== "Missing"
     );
 
     const container = d3.select("#age-chart");
+
+    container.selectAll("*").remove();
 
     if (!rows.length) {
         container.text("No data available.");
@@ -105,7 +101,5 @@ d3.csv("data/hospitalised_injuries_all.csv", d => ({
         .attr("y", 17)
         .attr("text-anchor", "middle")
         .text("Hospitalisations");
-}).catch(error => {
-    console.error("Error loading age chart data:", error);
-    d3.select("#age-chart").text("Unable to load chart data.");
+    Dashboard.interactions("age", container);
 });
