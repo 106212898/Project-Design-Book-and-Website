@@ -61,6 +61,8 @@ const Dashboard = (() => {
                 });
             });
             update();
+        } else if (name === 'heatmap') {
+            bindDetails(svg.selectAll('.heat-cell'), d => `${d.state} · ${d.year}: ${format(d.value)} hospitalisations`);
         } else if (name === 'state') {
             const areas = svg.selectAll('.area');
             const legends = svg.selectAll('g').filter(function() { return d3.select(this).select(':scope > .legend-label').size() > 0; });
