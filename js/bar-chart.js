@@ -60,7 +60,7 @@ Dashboard.register("bar", (data, selectedYear) => {
         .attr("y", d => y(d.category))
         .attr("width", d => x(d.value) - margin.left)
         .attr("height", y.bandwidth())
-        .attr("fill", "#0d9488");
+        .attr("fill", "#1b6b4a");
 
     svg.selectAll(".bar-label")
         .data(rows)

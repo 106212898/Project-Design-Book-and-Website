@@ -14,73 +14,109 @@
 
 <body>
     <header class="dashboard-header">
-        <p class="eyebrow">Australia, 2011 to 2021</p>
-        <h1>Road Injury Hospitalisations</h1>
-        <p class="subtitle">
-            Exploring hospitalisations by road-user type, age, sex and state.
-        </p>
+        <div>
+            <p class="eyebrow">Australia, 2011 to 2021</p>
+            <h1>Hospitalised injuries from road crashes</h1>
+        </div>
+        <p class="header-year" aria-label="Comparison year"><span class="selected-year">2021</span></p>
     </header>
 
+    <nav class="page-tabs" role="tablist" aria-label="Dashboard pages">
+        <button class="tab" role="tab" type="button" data-page="overview" aria-controls="page-overview">Overview</button>
+        <button class="tab" role="tab" type="button" data-page="breakdowns" aria-controls="page-breakdowns">Road users and sex</button>
+        <button class="tab" role="tab" type="button" data-page="states" aria-controls="page-states">States</button>
+    </nav>
+
+    <section class="filter-bar" aria-label="Chart controls">
+        <label class="filter" data-pages="overview breakdowns" for="year-select">
+            <span>Year</span>
+            <select id="year-select" disabled></select>
+        </label>
+        <label class="filter" data-pages="breakdowns" for="sort-select">
+            <span>Road-user bars</span>
+            <select id="sort-select">
+                <option value="value">Highest first</option>
+                <option value="name">Alphabetical</option>
+            </select>
+        </label>
+        <p id="dashboard-status" role="status">Loading chart data…</p>
+        <button id="reset-controls" type="button">Reset</button>
+    </section>
+
     <main class="dashboard">
-        <section class="chart-card chart-wide dashboard-controls" aria-label="Chart controls">
-            <label for="year-select">Comparison year <select id="year-select" disabled></select></label>
-            <label for="sort-select">Road-user bars <select id="sort-select"><option value="value">Highest first</option><option value="name">Alphabetical</option></select></label>
-            <button id="reset-controls" type="button">Reset charts</button>
-            <p id="dashboard-status" role="status">Loading chart data…</p>
-            <p class="interaction-help">Choose a year for the three comparison charts. Hover, tap, or focus chart marks for values. Use trend legends to hide/show categories and state legends to highlight a state. Trend charts show all years.</p>
-        </section>
-        <section class="chart-card chart-wide">
-            <div class="chart-heading">
-                <h2>Hospitalisations Over Time</h2>
-                <p>Yearly figures by road-user category</p>
-            </div>
-            <div id="line-chart" class="chart"></div>
-        </section>
+        <!-- Page 1 -->
+        <div class="page" id="page-overview" data-page="overview" role="tabpanel">
+            <section class="chart-card" id="card-line">
+                <div class="chart-heading">
+                    <h2>Hospitalisations Over Time</h2>
+                    <p>Yearly figures by road-user category</p>
+                </div>
+                <div id="line-chart" class="chart"></div>
+            </section>
 
-        <section class="chart-card">
-            <div class="chart-heading">
-                <h2>Road-User Categories</h2>
-                <p>Hospitalisations in <span class="selected-year">2021</span></p>
+            <div class="kpi-row">
+                <div class="kpi" role="group" aria-label="Total hospitalisations">
+                    <p class="kpi-label">Hospitalised injuries, <span class="selected-year">2021</span></p>
+                    <p class="kpi-value" id="kpi-total">–</p>
+                </div>
+                <div class="kpi" role="group" aria-label="Change from previous year">
+                    <p class="kpi-label" id="kpi-change-label">Change from previous year</p>
+                    <p class="kpi-value" id="kpi-change">–</p>
+                </div>
             </div>
-            <div id="bar-chart" class="chart"></div>
-        </section>
 
-        <section class="chart-card">
-            <div class="chart-heading">
-                <h2>Hospitalisations by Sex</h2>
-                <p>Distribution in <span class="selected-year">2021</span></p>
-            </div>
-            <div id="donut-chart" class="chart"></div>
-        </section>
+            <section class="chart-card" id="card-age">
+                <div class="chart-heading">
+                    <h2>Hospitalisations by Age</h2>
+                    <p>Age-group comparison in <span class="selected-year">2021</span></p>
+                </div>
+                <div id="age-chart" class="chart"></div>
+            </section>
+        </div>
 
-        <section class="chart-card">
-            <div class="chart-heading">
-                <h2>Hospitalisations by Age</h2>
-                <p>Age-group comparison in <span class="selected-year">2021</span></p>
-            </div>
-            <div id="age-chart" class="chart"></div>
-        </section>
+        <!-- Page 2 -->
+        <div class="page" id="page-breakdowns" data-page="breakdowns" role="tabpanel">
+            <section class="chart-card">
+                <div class="chart-heading">
+                    <h2>Road-User Categories</h2>
+                    <p>Hospitalisations in <span class="selected-year">2021</span></p>
+                </div>
+                <div id="bar-chart" class="chart"></div>
+            </section>
 
-        <section class="chart-card chart-wide">
-            <div class="chart-heading">
-                <h2>Hospitalisations by State</h2>
-                <p>Yearly trends across states and territories</p>
-            </div>
-            <div id="state-chart" class="chart"></div>
-        </section>
+            <section class="chart-card">
+                <div class="chart-heading">
+                    <h2>Hospitalisations by Sex</h2>
+                    <p>Distribution in <span class="selected-year">2021</span></p>
+                </div>
+                <div id="donut-chart" class="chart"></div>
+            </section>
+        </div>
 
-        <section class="chart-card chart-wide">
-            <div class="chart-heading">
-                <h2>When Each State Peaked</h2>
-                <p>Heatmap of hospitalisations by state and year. Darker cells are closer to that state's own peak year.</p>
-            </div>
-            <div id="heatmap-chart" class="chart"></div>
-        </section>
+        <!-- Page 3 -->
+        <div class="page" id="page-states" data-page="states" role="tabpanel">
+            <section class="chart-card">
+                <div class="chart-heading">
+                    <h2>Hospitalisations by State</h2>
+                    <p>Yearly trends across states and territories</p>
+                </div>
+                <div id="state-chart" class="chart"></div>
+            </section>
 
-        <footer class="dashboard-footer">
-            Source: hospitalised_injuries_all.csv
-        </footer>
+            <section class="chart-card">
+                <div class="chart-heading">
+                    <h2>When Each State Peaked</h2>
+                    <p>Darker cells are closer to that state's own peak year</p>
+                </div>
+                <div id="heatmap-chart" class="chart"></div>
+            </section>
+        </div>
     </main>
+
+    <footer class="dashboard-footer">
+        <span>Source: hospitalised_injuries_all.csv</span>
+        <span>Hover, tap or focus chart marks for values. Click legends to hide or highlight.</span>
+    </footer>
 
     <script src="js/dashboard.js"></script>
     <script src="js/line-chart.js"></script>
@@ -89,5 +125,6 @@
     <script src="js/age-chart.js"></script>
     <script src="js/state-chart.js"></script>
     <script src="js/heatmap-chart.js"></script>
+    <script src="js/pages.js"></script>
 </body>
 </html>

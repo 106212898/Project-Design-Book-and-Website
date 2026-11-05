@@ -9,13 +9,13 @@ Dashboard.register("heatmap", (data) => {
         return;
     }
 
-    const width = 960;
+    const width = 700;
     const margin = { top: 30, right: 20, bottom: 20, left: 60 };
 
     const years = [...new Set(rows.map(d => d.year))].sort(d3.ascending);
     const states = [...new Set(rows.map(d => d.category))].sort();
 
-    const cellHeight = 44;
+    const cellHeight = 50;
     const height = margin.top + margin.bottom + states.length * cellHeight;
 
     const svg = container.append("svg")
@@ -30,7 +30,7 @@ Dashboard.register("heatmap", (data) => {
 
     // Each state is scaled against its own peak, so small states stay readable
     const peak = new Map(states.map(s => [s, d3.max(cells.filter(c => c.state === s), c => c.value)]));
-    const color = d3.scaleSequential(d3.interpolateRgb("#f1efe4", "#1d5fa8")).domain([0, 1]);
+    const color = d3.scaleSequential(d3.interpolateRgb("#f1f0e2", "#0a3f2c")).domain([0, 1]);
     const shade = d => color(d.value / peak.get(d.state));
 
     const x = d3.scaleBand().domain(years).range([margin.left, width - margin.right]).padding(0);

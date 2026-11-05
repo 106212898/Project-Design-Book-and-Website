@@ -67,7 +67,7 @@ const Dashboard = (() => {
             const areas = svg.selectAll('.area');
             const legends = svg.selectAll('g').filter(function() { return d3.select(this).select(':scope > .legend-label').size() > 0; });
             const years = areas.datum().map(d => d.data.year);
-            const x = d3.scaleLinear().domain(d3.extent(years)).range([75, 930]);
+            const x = d3.scaleLinear().domain(d3.extent(years)).range([75, 670]);
             areas.classed('interactive-mark', true).on('pointermove click', function(event, layer) {
                 const [px] = d3.pointer(event, svg.node());
                 const nearest = d3.least(layer, d => Math.abs(d.data.year - x.invert(px)));
@@ -96,6 +96,11 @@ const Dashboard = (() => {
         dismiss();
         names.forEach(name => renderers.get(name)(data, year));
         d3.selectAll('.selected-year').text(year);
+        const total = y => d3.sum(data.filter(d => d.dataset === 'national_roaduser' && d.year === y), d => d.value);
+        const now = total(year), before = total(year - 1), change = before ? (now / before - 1) * 100 : null;
+        d3.select('#kpi-total').text(format(now));
+        d3.select('#kpi-change').text(change === null ? 'n/a' : `${change >= 0 ? '+' : ''}${change.toFixed(1)}%`);
+        d3.select('#kpi-change-label').text(change === null ? 'Change from previous year' : `Change from ${year - 1}`);
         d3.select('#dashboard-status').text(`Comparison year: ${year}. Trend charts show all available years.`);
     }
     document.addEventListener('keydown', event => { if (event.key === 'Escape') dismiss(); });

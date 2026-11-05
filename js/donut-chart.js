@@ -21,7 +21,7 @@ Dashboard.register("donut", (data, selectedYear) => {
 
     const color = d3.scaleOrdinal()
         .domain(rows.map(d => d.category))
-        .range(["#0d9488", "#3b82f6", "#f59e0b"]);
+        .range(["#1b6b4a", "#c2570c", "#7b8794"]);
 
     const total = d3.sum(rows, d => d.value);
 

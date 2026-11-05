@@ -14,8 +14,8 @@ Dashboard.register("age", (data, selectedYear) => {
         return;
     }
 
-    const width = 650;
-    const height = 420;
+    const width = 520;
+    const height = 400;
     const margin = { top: 25, right: 20, bottom: 65, left: 65 };
 
     const svg = container.append("svg")
@@ -75,7 +75,7 @@ Dashboard.register("age", (data, selectedYear) => {
         .attr("y", d => y(d.value))
         .attr("width", x.bandwidth())
         .attr("height", d => y(0) - y(d.value))
-        .attr("fill", "#3b82f6");
+        .attr("fill", "#c2570c");
 
     svg.selectAll(".value-label")
         .data(rows)
