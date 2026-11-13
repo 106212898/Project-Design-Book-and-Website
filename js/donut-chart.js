@@ -12,9 +12,8 @@ Dashboard.register("donut", (data, selectedYear) => {
         return;
     }
 
-    const width = 500;
-    const height = 390;
-    const radius = 125;
+    const { width, height } = Dashboard.size(container, 500, 390);
+    const radius = Math.max(80, Math.min(width / 2 - 20, (height - 110) / 2));
 
     const svg = container.append("svg")
         .attr("viewBox", `0 0 ${width} ${height}`);
@@ -34,7 +33,7 @@ Dashboard.register("donut", (data, selectedYear) => {
         .outerRadius(radius);
 
     const chart = svg.append("g")
-        .attr("transform", `translate(${width / 2},${height / 2 - 10})`);
+        .attr("transform", `translate(${width / 2},${(height - 50) / 2})`);
 
     chart.selectAll("path")
         .data(pie(rows))
@@ -61,7 +60,7 @@ Dashboard.register("donut", (data, selectedYear) => {
         .attr("transform", `translate(20,${height - 60})`);
 
     rows.forEach((d, i) => {
-        const x = i === 0 ? 0 : i === 1 ? 155 : 300;
+        const x = i * ((width - 40) / rows.length);
 
         legend.append("rect")
             .attr("x", x)

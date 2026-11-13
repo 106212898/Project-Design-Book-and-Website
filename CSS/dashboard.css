@@ -234,7 +234,7 @@ button { font: inherit; }
 .chart-heading p {
     margin: 2px 0 0;
     color: var(--muted);
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .selected-year { font-weight: 600; }
@@ -292,7 +292,7 @@ button { font: inherit; }
 .chart text {
     font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif;
     fill: var(--ink-soft);
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .chart .axis path,
@@ -301,8 +301,8 @@ button { font: inherit; }
 .chart .grid line { stroke: #e4e8e2; }
 .chart .grid path { display: none; }
 
-.chart .axis-label { fill: var(--muted); font-size: 12px; }
-.chart .legend-label { font-size: 12px; }
+.chart .axis-label { fill: var(--muted); font-size: 13px; }
+.chart .legend-label { font-size: 13px; }
 
 .chart .line { fill: none; stroke-width: 2.4; stroke-linejoin: round; }
 .chart .line-point { stroke: #ffffff; stroke-width: 1.5; }
@@ -311,21 +311,21 @@ button { font: inherit; }
 .chart .center-number {
     fill: var(--ink);
     font-family: "Archivo", Arial, Helvetica, sans-serif;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 800;
 }
 
-.chart .center-label { fill: var(--muted); font-size: 12px; }
+.chart .center-label { fill: var(--muted); font-size: 13px; }
 .chart .slice-label { fill: #ffffff; pointer-events: none; }
 
 .chart .heat-cell { stroke: #ffffff; stroke-width: 2; rx: 1px; }
-.chart .heat-value { pointer-events: none; font-size: 11px; font-weight: 600; }
+.chart .heat-value { pointer-events: none; font-size: 12px; font-weight: 600; }
 
 .state-inspector {
     flex: none;
     margin-top: 8px;
     color: var(--muted);
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5;
 }
 

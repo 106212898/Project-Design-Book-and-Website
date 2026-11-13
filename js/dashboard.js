@@ -6,7 +6,18 @@ const Dashboard = (() => {
     let selectedState = null;
     const format = d3.format(',');
     const tip = d3.select('body').append('div').attr('class', 'chart-tooltip').attr('role', 'tooltip').attr('id', 'chart-tooltip').attr('hidden', true);
-    const api = { sort: 'value', register(name, render) { renderers.set(name, render); }, interactions };
+    const api = {
+        sort: 'value',
+        register(name, render) { renderers.set(name, render); },
+        interactions,
+        // Use the card's real pixel size as the SVG viewBox so text stays at its true size.
+        // Falls back to the given size when the container has no usable height (stacked mobile layout).
+        size(container, fallbackWidth, fallbackHeight, reserve = 0) {
+            const node = container.node();
+            const w = node.clientWidth, h = node.clientHeight - reserve;
+            return w >= 560 && h >= 220 ? { width: Math.round(w), height: Math.round(h) } : { width: fallbackWidth, height: fallbackHeight };
+        }
+    };
     function dismiss() { tip.attr('hidden', true); }
     function show(event, text) {
         tip.text(text).attr('hidden', null);
@@ -67,7 +78,7 @@ const Dashboard = (() => {
             const areas = svg.selectAll('.area');
             const legends = svg.selectAll('g').filter(function() { return d3.select(this).select(':scope > .legend-label').size() > 0; });
             const years = areas.datum().map(d => d.data.year);
-            const x = d3.scaleLinear().domain(d3.extent(years)).range([75, 670]);
+            const x = d3.scaleLinear().domain(d3.extent(years)).range(svg.property('__xRange'));
             areas.classed('interactive-mark', true).on('pointermove click', function(event, layer) {
                 const [px] = d3.pointer(event, svg.node());
                 const nearest = d3.least(layer, d => Math.abs(d.data.year - x.invert(px)));
@@ -103,6 +114,11 @@ const Dashboard = (() => {
         d3.select('#kpi-change-label').text(change === null ? 'Change from previous year' : `Change from ${year - 1}`);
         d3.select('#dashboard-status').text(`Comparison year: ${year}. Trend charts show all available years.`);
     }
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => { if (data.length) render(); }, 150);
+    });
     document.addEventListener('keydown', event => { if (event.key === 'Escape') dismiss(); });
     window.addEventListener('scroll', dismiss, true);
     document.addEventListener('DOMContentLoaded', async () => {

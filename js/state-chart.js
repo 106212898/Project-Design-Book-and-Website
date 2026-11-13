@@ -9,19 +9,20 @@ Dashboard.register("state", (data, selectedYear) => {
         return;
     }
 
-    const width = 960;
-    const height = 520;
+    const { width, height } = Dashboard.size(container, 700, 560, 70);
 
     const margin = {
         top: 25,
         right: 30,
         bottom: 110,
-        left: 75
+        left: 85
     };
 
     const svg = container.append("svg")
         .attr("viewBox", `0 0 ${width} ${height}`)
         .attr("preserveAspectRatio", "xMidYMid meet");
+
+    svg.property("__xRange", [margin.left, width - margin.right]);
 
     const years = [...new Set(rows.map(d => d.year))]
         .sort(d3.ascending);
@@ -142,7 +143,7 @@ Dashboard.register("state", (data, selectedYear) => {
 
         const item = legend.append("g")
             .attr("transform",
-                `translate(${column * 215},${row * 23})`);
+                `translate(${column * ((width - margin.left - margin.right) / 4)},${row * 23})`);
 
         item.append("rect")
             .attr("width", 13)

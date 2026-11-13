@@ -9,13 +9,13 @@ Dashboard.register("heatmap", (data) => {
         return;
     }
 
-    const width = 700;
+    const { width, height: fullHeight } = Dashboard.size(container, 700, 450);
     const margin = { top: 30, right: 20, bottom: 20, left: 60 };
 
     const years = [...new Set(rows.map(d => d.year))].sort(d3.ascending);
     const states = [...new Set(rows.map(d => d.category))].sort();
 
-    const cellHeight = 50;
+    const cellHeight = Math.min(64, (fullHeight - margin.top - margin.bottom) / states.length);
     const height = margin.top + margin.bottom + states.length * cellHeight;
 
     const svg = container.append("svg")

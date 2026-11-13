@@ -9,9 +9,8 @@ Dashboard.register("line", (data, selectedYear) => {
         return;
     }
 
-    const width = 960;
-    const height = 560;
-    const margin = { top: 20, right: 235, bottom: 55, left: 65 };
+    const { width, height } = Dashboard.size(container, 960, 560);
+    const margin = { top: 20, right: 270, bottom: 60, left: 85 };
 
     const svg = container.append("svg")
         .attr("viewBox", `0 0 ${width} ${height}`);
@@ -98,7 +97,7 @@ Dashboard.register("line", (data, selectedYear) => {
 
     grouped.forEach((series, i) => {
         const item = legend.append("g")
-            .attr("transform", `translate(0,${i * 29})`);
+            .attr("transform", `translate(0,${i * Math.min(29, (height - margin.top - margin.bottom) / grouped.length)})`);
 
         item.append("line")
             .attr("x1", 0).attr("x2", 18)

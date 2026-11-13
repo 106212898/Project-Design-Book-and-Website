@@ -12,9 +12,8 @@ Dashboard.register("bar", (data, selectedYear) => {
         return;
     }
 
-    const width = 650;
-    const height = 530;
-    const margin = { top: 15, right: 65, bottom: 45, left: 195 };
+    const { width, height } = Dashboard.size(container, 650, 530);
+    const margin = { top: 15, right: 70, bottom: 55, left: 235 };
 
     const svg = container.append("svg")
         .attr("viewBox", `0 0 ${width} ${height}`);
