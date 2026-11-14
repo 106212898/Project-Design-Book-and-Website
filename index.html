@@ -14,17 +14,25 @@
 
 <body>
     <header class="dashboard-header">
-        <div>
-            <p class="eyebrow">Australia, 2011 to 2021</p>
-            <h1>Hospitalised injuries from road crashes</h1>
+        <div class="brand-lockup">
+            <div class="brand-mark" aria-hidden="true">
+                <svg viewBox="0 0 32 32" role="presentation"><path d="M7 25V7h5l8 11V7h5v18h-5L12 14v11z" fill="currentColor"/></svg>
+            </div>
+            <div class="brand-copy">
+                <p class="eyebrow">ROAD SAFETY INSIGHTS <span>·</span> AUSTRALIA</p>
+                <h1>Road injury dashboard</h1>
+            </div>
         </div>
-        <p class="header-year" aria-label="Comparison year"><span class="selected-year">2021</span></p>
+        <div class="header-meta">
+            <span class="data-period">2011 — 2021</span>
+            <span class="year-chip">Viewing <strong class="selected-year">2021</strong></span>
+        </div>
     </header>
 
     <nav class="page-tabs" role="tablist" aria-label="Dashboard pages">
-        <button class="tab" role="tab" type="button" data-page="overview" aria-controls="page-overview">Overview</button>
-        <button class="tab" role="tab" type="button" data-page="breakdowns" aria-controls="page-breakdowns">Road users and sex</button>
-        <button class="tab" role="tab" type="button" data-page="states" aria-controls="page-states">States</button>
+        <button class="tab" role="tab" type="button" data-page="overview" aria-controls="page-overview"><span class="tab-number">01</span> Overview</button>
+        <button class="tab" role="tab" type="button" data-page="breakdowns" aria-controls="page-breakdowns"><span class="tab-number">02</span> Road users &amp; sex</button>
+        <button class="tab" role="tab" type="button" data-page="states" aria-controls="page-states"><span class="tab-number">03</span> State comparison</button>
     </nav>
 
     <section class="filter-bar" aria-label="Chart controls">
@@ -40,7 +48,7 @@
             </select>
         </label>
         <p id="dashboard-status" role="status">Loading chart data…</p>
-        <button id="reset-controls" type="button">Reset</button>
+        <button id="reset-controls" type="button"><span aria-hidden="true">↺</span> Reset filters</button>
     </section>
 
     <main class="dashboard">
@@ -48,7 +56,7 @@
         <div class="page" id="page-overview" data-page="overview" role="tabpanel">
             <section class="chart-card" id="card-line">
                 <div class="chart-heading">
-                    <h2>Hospitalisations Over Time</h2>
+                    <h2>Hospitalisations over time</h2>
                     <p>Yearly figures by road-user category</p>
                 </div>
                 <div id="line-chart" class="chart"></div>
@@ -67,7 +75,7 @@
 
             <section class="chart-card" id="card-age">
                 <div class="chart-heading">
-                    <h2>Hospitalisations by Age</h2>
+                    <h2>Hospitalisations by age</h2>
                     <p>Age-group comparison in <span class="selected-year">2021</span></p>
                 </div>
                 <div id="age-chart" class="chart"></div>
@@ -78,7 +86,7 @@
         <div class="page" id="page-breakdowns" data-page="breakdowns" role="tabpanel">
             <section class="chart-card">
                 <div class="chart-heading">
-                    <h2>Road-User Categories</h2>
+                    <h2>Road-user categories</h2>
                     <p>Hospitalisations in <span class="selected-year">2021</span></p>
                 </div>
                 <div id="bar-chart" class="chart"></div>
@@ -86,7 +94,7 @@
 
             <section class="chart-card">
                 <div class="chart-heading">
-                    <h2>Hospitalisations by Sex</h2>
+                    <h2>Hospitalisations by sex</h2>
                     <p>Distribution in <span class="selected-year">2021</span></p>
                 </div>
                 <div id="donut-chart" class="chart"></div>
@@ -97,7 +105,7 @@
         <div class="page" id="page-states" data-page="states" role="tabpanel">
             <section class="chart-card">
                 <div class="chart-heading">
-                    <h2>Hospitalisations by State</h2>
+                    <h2>Hospitalisations by state</h2>
                     <p>Yearly trends across states and territories</p>
                 </div>
                 <div id="state-chart" class="chart"></div>
@@ -105,7 +113,7 @@
 
             <section class="chart-card">
                 <div class="chart-heading">
-                    <h2>When Each State Peaked</h2>
+                    <h2>State peak-year patterns</h2>
                     <p>Darker cells are closer to that state's own peak year</p>
                 </div>
                 <div id="heatmap-chart" class="chart"></div>

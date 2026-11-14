@@ -15,7 +15,7 @@ const Dashboard = (() => {
         size(container, fallbackWidth, fallbackHeight, reserve = 0) {
             const node = container.node();
             const w = node.clientWidth, h = node.clientHeight - reserve;
-            return w >= 560 && h >= 220 ? { width: Math.round(w), height: Math.round(h) } : { width: fallbackWidth, height: fallbackHeight };
+            return w >= 300 && h >= 120 ? { width: Math.round(w), height: Math.round(h) } : { width: fallbackWidth, height: fallbackHeight };
         }
     };
     function dismiss() { tip.attr('hidden', true); }
